@@ -48,8 +48,7 @@ function App() {
         }
     }
     const calculateResult = () => {
-        console.log(eval(val))
-        setVal(eval(val))
+        setVal(eval(val).toString())
     }
   return (
       //calculator app
@@ -86,7 +85,9 @@ function App() {
                   <button type="button" className="decimal function btn btn-secondary" value="."onClick={handleInput}>.</button>
                   <button type="button" className="all-clear function btn btn-danger btn-sm" value="all-clear" onClick={() =>setVal('0')}>AC
                   </button>
-
+                  <button type="button" className="single-clear function btn-sm" value="all-clear" onClick={() =>setVal(val.slice(0, - 1))}>
+                    <img src="download.png" className="bck"/>
+                  </button>
                   <button type="button" className="equal-sign operator btn btn-default" value="=" onClick={calculateResult}>=</button>
 
               </div>
