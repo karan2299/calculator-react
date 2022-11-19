@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.main-container{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  /*border: 2px solid black;*/
+}
+.container-screen{
+  border: 3px solid black;
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+  height: 70px;
+
+}
+.panel{
+  border: 5px solid black;
+}
+.card3{
+  display:inline-block;
+  /*border: 2px solid black !important;*/
+  height: auto;
+  margin-bottom: 10%;
+  margin-left: 13px;
+  box-shadow: 0 17px 41px rgb(0 0 0 / 18%), 0 0 30px rgb(0 0 0 / 26%);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.9s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+
+}
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+button {
+  /*height: 49px;*/
+  /*align-items: center!important;*/
+  /*text-align: center!important;*/
+  /*width: 70%;*/
+  font-size: 1.5rem!important
+}
+.ex1 {
+  width: 290px;
+  align-items: end;
+  overflow-y: hidden;
+  margin-right: 5px;
+  overflow-x: hidden;
+  text-align: end;
+  float: left;
+  /*transform: rotate(180deg);*/
+  /*direction: rtl;*/
+}
+
+
+
